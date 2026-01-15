@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+	int a, b;
+
+	// Input with promt
+	printf("Enter numbers: ");
+	scanf("%d %d" , &a, &b);
+
+	// 1. Both positive or not
+	if (a > 0 && b > 0){
+		printf("Both are positive\n");
+	}else {
+		printf("Both are not positive\n");
+	}
+
+
+	// 2. At least one equals 5
+	if (a == 5 || b == 5){
+		printf("%d or %d = 5\n", a, b);
+	}else {
+		printf("%d,%d != 5\n", a, b);
+	}
+	// 3 First number not greater than 10
+	if (a > 10) {
+		printf("%d > 10\n" , a);
+	}else {
+		printf("%d <= 10\n" , a);
+	}
+
+	return 0;
+}
